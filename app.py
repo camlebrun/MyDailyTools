@@ -1,7 +1,7 @@
 import datetime
 import streamlit as st
 st.markdown("<h1 style='text-align: center'>Calculatrice de jours</h1>", unsafe_allow_html=True)
-
+@st.cache
 
 d = st.date_input("Choisir votre date?", datetime.datetime.now())
 st.write('Vous avez choisi le : ', d)
