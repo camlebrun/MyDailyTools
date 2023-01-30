@@ -16,7 +16,6 @@ if password_type == "Tous les caractères":
 else:
     chars = string.ascii_letters + string.digits
 
-@st.cache
 def generate_password(length, chars):
     password = "".join(random.choice(chars) for i in range(length))
     return password
