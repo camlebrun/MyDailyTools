@@ -3,6 +3,8 @@ import string
 import streamlit as st
 
 st.set_page_config(layout="wide", page_title="Mots de passe forts")
+st.markdown("<h1 style='text-align: center'>Mots de passe forts</h1>", unsafe_allow_html=True)
+
 
 length = st.slider("Taille du mot de passe :", min_value=8, max_value=32, value=12, step=1)
 
