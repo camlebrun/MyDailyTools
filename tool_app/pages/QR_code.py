@@ -2,7 +2,6 @@ import qrcode
 from io import BytesIO
 from PIL import Image
 import streamlit as st
-
 def generate_qr_code(data):
     qr = qrcode.QRCode(
         version = 1,
@@ -25,6 +24,7 @@ def main():
         img.save(img_buffer, format='PNG')
         img_buffer.seek(0)
         st.image(img_buffer, width=200)
+        
 
 if __name__ == '__main__':
     main()
