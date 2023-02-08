@@ -25,4 +25,4 @@ def generate_password(length, chars):
 password = generate_password(length, chars)
 
 st.write("Voici votre mot de passe fort :")
-st.write(password)
+code = st.code(password)
