@@ -2,6 +2,7 @@ import streamlit as st
 
 st.set_page_config(layout = "wide", page_title = "Home")
 st.markdown("<h1 style='text-align: center'>Outils pratique </h1>", unsafe_allow_html=True)
+st.error('This is an error', icon="🚨")
 def page_0():
     st.empty()
 def page_2():
