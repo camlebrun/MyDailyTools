@@ -31,7 +31,7 @@ def date_difference():
     delta = end_date - start_date
     delta_str = format_timedelta(delta)
     st.metric("Différence :", delta_str)
-    st.markdown("### Différence : %s" % format_timedelta(delta))
+
 
 if __name__ == '__main__':
     date_difference()
