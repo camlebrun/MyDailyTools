@@ -22,7 +22,7 @@ def format_timedelta(delta):
             else:
                 return f"{months} mois et {days} jours"
         else:
-            return f"{years} an(s),  {months} mois, et {days} jours"
+            return f"{years} ans,  {months} mois, et {days} jours"
 
 
 def date_difference():
