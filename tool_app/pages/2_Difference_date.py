@@ -1,5 +1,4 @@
 import streamlit as st
-from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 st.markdown("<h1 style='text-align: center'>Calcul de différence de dates</h1>", unsafe_allow_html=True)
