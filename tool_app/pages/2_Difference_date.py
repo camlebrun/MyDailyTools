@@ -1,6 +1,7 @@
 import streamlit as st
 from datetime import datetime, timedelta
-st.title("Calcul de différence de dates")
+
+st.markdown("<h1 style='text-align: center'>Calcul de différence de dates</h1>", unsafe_allow_html=True)
 
 def format_timedelta(delta):
     if delta.days < 0:

@@ -3,7 +3,8 @@ from io import BytesIO
 from PIL import Image
 import streamlit as st
 st.set_page_config(page_title="QR Code", page_icon=":guardsman:", layout="wide")
-st.title("QR Code")
+st.markdown("<h1 style='text-align: center'>Générateur de QR Code</h1>", unsafe_allow_html=True)
+
 def generate_qr_code(data):
     qr = qrcode.QRCode(
         version = 1,
