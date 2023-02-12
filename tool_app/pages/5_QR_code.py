@@ -25,7 +25,6 @@ def main():
         img.save(img_buffer, format='PNG')
         img_buffer.seek(0)
         st.image(img_buffer, width=200)
-        
 
 if __name__ == '__main__':
     main()
