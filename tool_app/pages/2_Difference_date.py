@@ -4,6 +4,7 @@ from dateutil.relativedelta import relativedelta
 
 st.markdown("<h1 style='text-align: center'>Calcul de différence de dates</h1>", unsafe_allow_html=True)
 
+
 def date_difference():
     start_date = st.date_input("Entrez la date de départ :")
     end_date = st.date_input("Entrez la date de fin :", datetime.datetime.now() + datetime.timedelta(days=7))    
@@ -32,6 +33,7 @@ def date_difference():
         result += f"{days} jours"
 
     st.metric("Résultat :", result)
+    
 
 
 if __name__ == '__main__':

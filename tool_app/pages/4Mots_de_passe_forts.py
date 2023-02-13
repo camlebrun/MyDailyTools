@@ -32,5 +32,7 @@ code = st.code(password, language="text")
 
 def refresh():
     st.write("Page actualisée!")
+    
 
 st.button("Nouveau mot de passe", refresh)
+

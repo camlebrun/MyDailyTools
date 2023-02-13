@@ -12,6 +12,7 @@ st.write("4. Mots de passe forts")
 st.write("5. Générateur de QR code")
 
 st.write("J'ai créee cette webapp pour vous aider dans votre quotidien, en centralisant des outils que j'utilise souvent.")
+st.balloons()
 def page_0():
     st.empty()
 def page_2():
