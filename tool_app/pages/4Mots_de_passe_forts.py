@@ -29,7 +29,7 @@ password = generate_password(length, chars)
 
 st.write("Voici votre mot de passe fort :")
 code = st.code(password, language="text")
-st.balloons()
+
 
 def refresh():
     st.write("Page actualisée!")
