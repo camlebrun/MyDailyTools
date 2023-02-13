@@ -1,9 +1,9 @@
 import streamlit as st
 
 st.set_page_config(layout = "wide", page_title = "Home")
-st.markdown("<h1 style='text-align: center'>My useful tools</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center'>My daily tools</h1>", unsafe_allow_html=True)
 
-st.write("Bienvenue sur la page d'accueil de useful tools !")
+st.write("Bienvenue sur la page d'accueil de daily tools !")
 st.write("Vous pouvez accéder aux outils suivants :")
 st.write("1. Calculatrice de jours")
 st.write("2. Différence de dates")
