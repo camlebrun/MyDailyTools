@@ -14,6 +14,4 @@ def generate_short_link(long_url):
 long_url = st.text_input("Entrez l'URL longue :")
 
 if long_url:
-    st.write("Lien court généré :")
-    st.write(generate_short_link(long_url))
-    st.balloons()
+    st.metric("Lien court généré : ", generate_short_link(long_url))
