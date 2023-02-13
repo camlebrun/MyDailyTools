@@ -6,8 +6,11 @@ st.markdown("<h1 style='text-align: center'>Calcul de différence de dates</h1>"
 
 
 def date_difference():
-    start_date = st.date_input("Entrez la date de départ :")
-    end_date = st.date_input("Entrez la date de fin :", datetime.datetime.now() + datetime.timedelta(days=7))    
+    col_1, col_2 = st.columns(2)
+    with col_1:
+        start_date = st.date_input("Entrez la date de départ :")
+    with col_2:
+        end_date = st.date_input("Entrez la date de fin :", datetime.datetime.now() + datetime.timedelta(days=7))    
     delta = relativedelta(end_date, start_date)
     years = delta.years
     months = delta.months
