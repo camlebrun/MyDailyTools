@@ -14,7 +14,7 @@ chars = string.ascii_letters + string.digits + string.punctuation
 
 
 if password_type == "Tous les caractères":
-    chars = string.ascii_letters + string.digits + string.punctuation
+    chars = string.ascii_letters + string.digits + string.punctuation+ string.punctuation
 else:
     chars = string.ascii_letters + string.digits
 
