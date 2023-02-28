@@ -2,7 +2,9 @@ import streamlit as st
 import datetime
 from dateutil.relativedelta import relativedelta
 
-st.markdown("<h1 style='text-align: center'>Calcul de différence de dates</h1>", unsafe_allow_html=True)
+st.markdown(
+    "<h1 style='text-align: center'>Calcul de différence de dates</h1>",
+    unsafe_allow_html=True)
 
 
 def date_difference():
@@ -10,7 +12,11 @@ def date_difference():
     with col_1:
         start_date = st.date_input("Entrez la date de départ :")
     with col_2:
-        end_date = st.date_input("Entrez la date de fin :", datetime.datetime.now() + datetime.timedelta(days=7))    
+        end_date = st.date_input(
+            "Entrez la date de fin :",
+            datetime.datetime.now() +
+            datetime.timedelta(
+                days=7))
     delta = relativedelta(end_date, start_date)
     years = delta.years
     months = delta.months
@@ -20,7 +26,7 @@ def date_difference():
 
     if years == 0 and months == 0 and days == 0:
         result = "Les deux dates sont identiques."
-    elif years < 1 and months < 1 and days <1:
+    elif years < 1 and months < 1 and days < 1:
         result = "La date de fin est antérieure à la date de départ."
     if years == 1:
         result += "1 an "
@@ -36,7 +42,6 @@ def date_difference():
         result += f"{days} jours"
 
     st.metric("Résultat :", result)
-    
 
 
 if __name__ == '__main__':

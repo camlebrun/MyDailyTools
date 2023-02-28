@@ -1,8 +1,10 @@
-import hashlib
-import streamlit as st
 import pyshorteners
+import streamlit as st
 st.set_page_config(layout="wide", page_title="Liens courts")
-st.markdown("<h1 style='text-align: center'>Générateur de liens courts</h1>", unsafe_allow_html=True)
+st.markdown(
+    "<h1 style='text-align: center'>Générateur de liens courts</h1>",
+    unsafe_allow_html=True)
+
 
 @st.cache
 def generate_short_link(long_url):

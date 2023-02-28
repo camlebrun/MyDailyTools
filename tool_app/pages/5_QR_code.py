@@ -2,20 +2,27 @@ import qrcode
 from io import BytesIO
 from PIL import Image
 import streamlit as st
-st.set_page_config(page_title="QR Code", page_icon=":guardsman:", layout="wide")
-st.markdown("<h1 style='text-align: center'>Générateur de QR Code</h1>", unsafe_allow_html=True)
+st.set_page_config(
+    page_title="QR Code",
+    page_icon=":guardsman:",
+    layout="wide")
+st.markdown(
+    "<h1 style='text-align: center'>Générateur de QR Code</h1>",
+    unsafe_allow_html=True)
+
 
 def generate_qr_code(data):
     qr = qrcode.QRCode(
-        version = 1,
-        error_correction = qrcode.constants.ERROR_CORRECT_L,
-        box_size = 10,
-        border = 4,
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=4,
     )
     qr.add_data(data)
     qr.make(fit=True)
     img = qr.make_image(fill_color="black", back_color="white")
     return img
+
 
 def main():
     url = st.text_input("Entrez l'URL")
@@ -26,6 +33,7 @@ def main():
         img_buffer.seek(0)
         st.image(img_buffer, width=200)
         st.balloons()
+
 
 if __name__ == '__main__':
     main()
